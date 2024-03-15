@@ -1,0 +1,111 @@
+
+[
+    {
+    "Recipe_image": "https://i.postimg.cc/pTk9kpmD/Chicken-Shawarma.jpg",
+    "recipe_id": 1,
+    "Recipe_name": "Chicken_Shawarma",
+    "Short_description": "Marinated chicken cooked on a rotisserie and shaved, perfect for wraps or pita sandwiches.",
+    "Ingredients": [
+    "1 boneless, skinless chicken breast",
+    "1 tablespoon olive oil",
+    "1 teaspoon ground cumin",
+    "1/2 teaspoon paprika",
+    "1/4 teaspoon turmeric",
+    "1/4 teaspoon garlic powder",
+    "Salt and pepper to taste",
+    "2 pita breads",
+    "Hummus (optional)",
+    "Tahini sauce (optional)",
+    "Chopped vegetables of your choice (onions, tomatoes, cucumbers)"
+    ],
+    "Preparing_time": "30 minutes",
+    "Calories": 400
+    },
+    {
+    "Recipe_image": "https://i.postimg.cc/0y8yX8qn/Beef-Kofta.jpg",
+    "recipe_id": 2,
+    "Recipe_name": "Beef Kofta",
+    "Short_description": "Spiced ground beef meatballs grilled on skewers, a popular Middle Eastern dish.",
+    "Ingredients": [
+    "1 pound ground beef",
+    "1/2 cup chopped onion",
+    "1/4 cup chopped parsley",
+    "1 tablespoon olive oil",
+    "1 teaspoon ground cumin",
+    "1/2 teaspoon coriander",
+    "1/4 teaspoon cinnamon",
+    "Salt and pepper to taste",
+    "Skewers"
+    ],
+    "Preparing_time": "45 minutes",
+    "Calories": 500
+    },
+    {
+    "Recipe_image": "https://i.postimg.cc/tTPbCfj7/Falafel.jpg",
+    "recipe_id": 3,
+    "Recipe_name": "Falafel",
+    "Short_description": "C deep-fried chickpea fritters, a vegetarian staple in Middle Eastern cuisine.",
+    "Ingredients": [
+    "1 cup dried chickpeas, soaked overnight",
+    "1/2 cup chopped onion",
+    "1/4 cup chopped parsley",
+    "1 clove garlic, minced",
+    "1 teaspoon cumin",
+    "1/2 teaspoon coriander",
+    "Salt and pepper to taste",
+    "Vegetable oil for frying"
+    ],
+    "Preparing_time": "2 hours (soaking) + 30 minutes",
+    "Calories": 300
+    },
+    {
+    "Recipe_image": "https://i.postimg.cc/Yq0X6Fvz/tikia-lapia.jpg",
+    "recipe_id": 4,
+    "Recipe_name": "Takia Lapia",
+    "Short_description": "A creamy dip or spread made from mashed chickpeas, tahini, olive oil, and lemon juice.",
+    "Ingredients": [
+    "1 can (15 oz) chickpeas, drained and rinsed",
+    "1/4 cup tahini",
+    "2 tablespoons olive oil",
+    "2 tablespoons lemon juice",
+    "1 clove garlic, minced",
+    "Salt and pepper to taste"
+    ],
+    "Preparing_time": "15 minutes",
+    "Calories": 200
+    },
+    {
+    "Recipe_image": "https://i.postimg.cc/k4MNnr8v/Baba-Ghanoush.jpg",
+    "recipe_id": 5,
+    "Recipe_name": "Baba Ghanoush",
+    "Short_description": "A smoky mashed eggplant dip, another popular Middle Eastern mezze dish.",
+    "Ingredients": [
+    "2 large eggplants",
+    "2 tablespoons olive oil",
+    "1/4 cup tahini",
+    "2 tablespoons lemon juice",
+    "1 clove garlic, minced",
+    "Salt and pepper to taste"
+    ],
+    "Preparing_time": "1 hour",
+    "Calories": 350
+    },
+    {
+    "Recipe_image": "https://i.postimg.cc/pLQTVmPK/Tabbouleh-Salad.jpg",
+    "recipe_id": 6,
+    "Recipe_name": "Tabbouleh_Salad",
+    "Short_description": "A refreshing salad made with parsley, bulgur wheat, tomatoes, cucumbers, and mint.",
+    "Ingredients": [
+    "1 cup bulgur wheat, rinsed",
+    "2 cups chopped parsley",
+    "1 cup chopped tomatoes",
+    "1/2 cup chopped cucumbers",
+    "1/4 cup chopped mint",
+    "2 tablespoons olive oil",
+    "2 tablespoons lemon juice",
+    "Salt and pepper to taste"
+    ],
+    "Preparing_time": "30 minutes",
+    "Calories": 350
+}
+]
