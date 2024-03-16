@@ -1,9 +1,9 @@
-import bannerImage from '../assets/images/cook.jpg'
+
 
 const Hero = () => {
     return (
         <div>
-            <div className={`hero min-h-[70vh] rounded-xl bg-[url(${bannerImage})]  bg-no-repeat bg-center`} >
+            <div className={`hero min-h-[70vh] rounded-xl bg-[url('./cook.jpg')]  bg-no-repeat bg-center`} >
             <div className="hero-content text-center text-neutral-content">
               <div className="lg:max-w-xl">
                 <h1 className="mb-10 text-2xl lg:text-5xl font-bold">Discover an exceptional cooking class tailored for you!</h1>

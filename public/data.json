@@ -18,7 +18,7 @@
     "Tahini sauce (optional)",
     "Chopped vegetables of your choice (onions, tomatoes, cucumbers)"
     ],
-    "Preparing_time": "30 minutes",
+    "Preparing_time": 30,
     "Calories": 400
     },
     {
@@ -37,7 +37,7 @@
     "Salt and pepper to taste",
     "Skewers"
     ],
-    "Preparing_time": "45 minutes",
+    "Preparing_time": 45,
     "Calories": 500
     },
     {
@@ -55,7 +55,7 @@
     "Salt and pepper to taste",
     "Vegetable oil for frying"
     ],
-    "Preparing_time": "2 hours (soaking) + 30 minutes",
+    "Preparing_time": 20,
     "Calories": 300
     },
     {
@@ -71,7 +71,7 @@
     "1 clove garlic, minced",
     "Salt and pepper to taste"
     ],
-    "Preparing_time": "15 minutes",
+    "Preparing_time": 15,
     "Calories": 200
     },
     {
@@ -87,7 +87,7 @@
     "1 clove garlic, minced",
     "Salt and pepper to taste"
     ],
-    "Preparing_time": "1 hour",
+    "Preparing_time": 10,
     "Calories": 350
     },
     {
@@ -105,7 +105,7 @@
     "2 tablespoons lemon juice",
     "Salt and pepper to taste"
     ],
-    "Preparing_time": "30 minutes",
+    "Preparing_time": 30 ,
     "Calories": 350
 }
 ]
