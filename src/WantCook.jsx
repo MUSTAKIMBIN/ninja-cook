@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const WantCook = ({wantCookItems}) => {
+const WantCook = ({wantCookItems,handlePreparing}) => {
     // console.log(typeof wantCookItems)
     return (
         <div className="text-center">
@@ -12,10 +12,11 @@ const WantCook = ({wantCookItems}) => {
             </div>
             {
                 wantCookItems.map((wantCookItem,idx)=> <div className='py-4 flex justify-between items-center text-xs font-semibold' key={idx}>
+                    <span>{idx+1}</span>
                     <p>{wantCookItem.Recipe_name}</p>
                     <p>{wantCookItem.Preparing_time} <br /> minutes</p>
                     <p>{wantCookItem.Calories} <br /> Calories</p>
-                    <button className='bg-[#FDA403] py-1 px-2 rounded-3xl text-xs text-black font-semibold'>Preparing</button>
+                    <button onClick={()=>handlePreparing(wantCookItem.recipe_id)} className='bg-[#FDA403] py-1 px-2 rounded-3xl text-xs text-black font-semibold'>Preparing</button>
                 </div>)
             }
             
@@ -24,7 +25,8 @@ const WantCook = ({wantCookItems}) => {
 };
 
 WantCook.propTypes={
-    wantCookItems: PropTypes.array
+    wantCookItems: PropTypes.array,
+    handlePreparing: PropTypes.func
 }
 
 export default WantCook;

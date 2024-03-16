@@ -8,9 +8,11 @@ import { useEffect, useState } from 'react'
 import WantCook from './WantCook'
 import CurrentCooking from './CurrentCooking'
 
+
 function App() {
   const [foodCards, setFoodCards]=useState([])
   const [wantCookItems, setWantCookItems]=useState([])
+ 
   useEffect(()=>{
     fetch('./data.json')
     .then(res=>res.json())
@@ -24,8 +26,13 @@ function App() {
     if(!isExist){
       setWantCookItems([...wantCookItems,cookItem])
     }else{
-      alert("you have allready add this")
+      alert("Don't do this")
     }
+  }
+
+  const handlePreparing=(recipe_id)=>{
+    const newRecipe = wantCookItems.filter(cookItem => cookItem.recipe_id != recipe_id)
+    setWantCookItems(newRecipe)
   }
 
   return (
@@ -46,7 +53,7 @@ function App() {
           }
         </div>
         <div className='w-2/5 border-[1px] border-[#FB8B24] shadow-lg shadow-[#FB8B24] rounded-xl p-5 h-full'>
-        <WantCook wantCookItems={wantCookItems}></WantCook>
+        <WantCook wantCookItems={wantCookItems} handlePreparing={handlePreparing}></WantCook>
         <CurrentCooking></CurrentCooking>
         </div>
         </div>
