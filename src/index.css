@@ -9,4 +9,6 @@ body{
 }
 /* button color: FDA403
 brand color: E8751A
-brorder color: E5C287 */
+brorder color: E5C287
+background: rgb(103,112,116);
+background: linear-gradient(344deg, rgba(103,112,116,1) 21%, rgba(42,41,66,0.7931034482758621) 46%); */

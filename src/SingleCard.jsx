@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import IngredientsList from "./components/IngredientsList";
 
 
-const SingleCard = ({foodCard}) => {
+const SingleCard = ({foodCard,handleWantToCook}) => {
     const {Recipe_name,Recipe_image,Short_description,Preparing_time,Ingredients,Calories}=foodCard
     return (
         <div>
@@ -30,14 +30,15 @@ const SingleCard = ({foodCard}) => {
               </div> <p className="text-sm font-semibold">{Calories} Calories</p>
               </div>
             </div>
-              <button className='bg-[#FDA403] py-3 px-6 rounded-3xl text-black font-semibold'>Want ot Cook </button>
+              <button onClick={()=>handleWantToCook(foodCard)} className='bg-[#FDA403] py-3 px-6 rounded-3xl text-black font-semibold'>Want ot Cook </button>
           </div>
         </div>
     );
 };
 
 SingleCard.propTypes={
-    foodCard: PropTypes.object.isRequired
+    foodCard: PropTypes.object.isRequired,
+    handleWantToCook: PropTypes.func.isRequired
 }
 
 export default SingleCard;
