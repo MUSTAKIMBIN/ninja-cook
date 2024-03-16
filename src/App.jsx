@@ -33,13 +33,14 @@ function App() {
 
   const handlePreparing=(recipe_id)=>{
     const newRecipe = wantCookItems.filter(cookItem => cookItem.recipe_id != recipe_id)
-    console.log(newRecipe)
+    // console.log(newRecipe)
     setWantCookItems(newRecipe)
     const mostNewRecipe = newRecipe.find(recepe=> recepe.recipe_id == newRecipe.recipe_id)
-    console.log(mostNewRecipe)
+    // console.log(typeof mostNewRecipe)
     setCurrentCookin([...currentCookings,mostNewRecipe])
+    // console.log()
   }
-  console.log(currentCookings)
+  console.log(typeof currentCookings)
 
   return (
     <>
