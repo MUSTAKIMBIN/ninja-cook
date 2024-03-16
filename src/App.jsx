@@ -7,6 +7,8 @@ import SingleCard from './SingleCard'
 import { useEffect, useState } from 'react'
 import WantCook from './WantCook'
 import CurrentCooking from './CurrentCooking'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -25,7 +27,7 @@ function App() {
     if(!isExist){
       setWantCookItems([...wantCookItems,cookItem])
     }else{
-      alert("Don't do this")
+      toast.warn("Recipe already in Want Cook list.");
     }
   }
 
@@ -41,6 +43,7 @@ function App() {
 
   return (
     <>
+    <ToastContainer />
     <header className='w-5/6 mx-auto'>  
       <NavBar></NavBar>
       <Hero></Hero>
