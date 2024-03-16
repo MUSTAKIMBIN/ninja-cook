@@ -2,16 +2,24 @@
 import './App.css'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
+import OurRecipes from './components/OurRecipes'
 
 function App() {
   
 
   return (
-    <div className='w-5/6 mx-auto'>
+    <>
+    <header className='w-5/6 mx-auto'>  
       <NavBar></NavBar>
       <Hero></Hero>
-
-    </div>
+    </header>
+    <main>
+      <section>
+       <OurRecipes></OurRecipes>
+      </section>
+    </main>
+    
+    </>
   )
 }
 
