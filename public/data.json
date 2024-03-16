@@ -6,7 +6,7 @@
     "Recipe_name": "Chicken_Shawarma",
     "Short_description": "Marinated chicken cooked on a rotisserie and shaved, perfect for wraps or pita sandwiches.",
     "Ingredients": [
-    "1 boneless, skinless chicken breast",
+    "1 boneless, chicken breast",
     "1 tablespoon olive oil",
     "1 teaspoon ground cumin",
     "1/2 teaspoon paprika",
@@ -14,9 +14,8 @@
     "1/4 teaspoon garlic powder",
     "Salt and pepper to taste",
     "2 pita breads",
-    "Hummus (optional)",
-    "Tahini sauce (optional)",
-    "Chopped vegetables of your choice (onions, tomatoes, cucumbers)"
+    "Hummus (optional)"
+    
     ],
     "Preparing_time": 30,
     "Calories": 400
@@ -52,8 +51,7 @@
     "1 clove garlic, minced",
     "1 teaspoon cumin",
     "1/2 teaspoon coriander",
-    "Salt and pepper to taste",
-    "Vegetable oil for frying"
+    "Salt and pepper to taste"
     ],
     "Preparing_time": 20,
     "Calories": 300
@@ -69,7 +67,8 @@
     "2 tablespoons olive oil",
     "2 tablespoons lemon juice",
     "1 clove garlic, minced",
-    "Salt and pepper to taste"
+    "Salt and pepper to taste",
+    "Vegetable oil for frying"
     ],
     "Preparing_time": 15,
     "Calories": 200
@@ -83,6 +82,8 @@
     "2 large eggplants",
     "2 tablespoons olive oil",
     "1/4 cup tahini",
+    "1/2 cup chopped onion",
+    "1/4 cup chopped parsley",
     "2 tablespoons lemon juice",
     "1 clove garlic, minced",
     "Salt and pepper to taste"
@@ -94,7 +95,7 @@
     "Recipe_image": "https://i.postimg.cc/pLQTVmPK/Tabbouleh-Salad.jpg",
     "recipe_id": 6,
     "Recipe_name": "Tabbouleh_Salad",
-    "Short_description": "A refreshing salad made with parsley, bulgur wheat, tomatoes, cucumbers, and mint.",
+    "Short_description": "A refreshing salad made with parsley, bulgur wheat, tomatoes and mint.",
     "Ingredients": [
     "1 cup bulgur wheat, rinsed",
     "2 cups chopped parsley",
