@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 
-
-const CurrentCooking = () => {
+const CurrentCooking = ({currentCookings}) => {
+    console.log(currentCookings)
     return (
         <div className="text-center">
             <h4 className="text-2xl font-semibold py-5 border-b">Currently <span className="text-[#E8751A]">cooking</span> : </h4>
@@ -12,5 +13,9 @@ const CurrentCooking = () => {
         </div>
     );
 };
+
+CurrentCooking.propTypes={
+    currentCookings: PropTypes.array
+}
 
 export default CurrentCooking;

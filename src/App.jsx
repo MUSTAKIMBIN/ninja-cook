@@ -12,6 +12,7 @@ import CurrentCooking from './CurrentCooking'
 function App() {
   const [foodCards, setFoodCards]=useState([])
   const [wantCookItems, setWantCookItems]=useState([])
+  const [currentCookings, setCurrentCookin]=useState([])
  
   useEffect(()=>{
     fetch('./data.json')
@@ -20,9 +21,7 @@ function App() {
   },[])
 
   const handleWantToCook=(cookItem)=>{
-    console.log(cookItem)
     const isExist = wantCookItems.find(wantCookItem => wantCookItem.recipe_id == cookItem.recipe_id)
-    console.log(isExist)
     if(!isExist){
       setWantCookItems([...wantCookItems,cookItem])
     }else{
@@ -32,8 +31,13 @@ function App() {
 
   const handlePreparing=(recipe_id)=>{
     const newRecipe = wantCookItems.filter(cookItem => cookItem.recipe_id != recipe_id)
+    console.log(newRecipe)
     setWantCookItems(newRecipe)
+    const mostNewRecipe = newRecipe.find(recepe=> recepe.recipe_id == newRecipe.recipe_id)
+    console.log(mostNewRecipe)
+    setCurrentCookin([...currentCookings,mostNewRecipe])
   }
+  console.log(currentCookings)
 
   return (
     <>
@@ -54,7 +58,7 @@ function App() {
         </div>
         <div className='w-2/5 border-[1px] border-[#FB8B24] shadow-lg shadow-[#FB8B24] rounded-xl p-5 h-full'>
         <WantCook wantCookItems={wantCookItems} handlePreparing={handlePreparing}></WantCook>
-        <CurrentCooking></CurrentCooking>
+        <CurrentCooking currentCookings={currentCookings}></CurrentCooking>
         </div>
         </div>
 
