@@ -8,7 +8,7 @@ const Footer = () => {
                 <aside>
     
                     <p className="font-bold text-3xl my-5">Ninj-<span className="text-[#FDA403]">Cook</span></p> 
-                    <p className="text-gray-600 font-semibold">Let&rsquo;s Connect: Follow us on social media for mouthwatering updates! </p>
+                    <p className="text-gray-600 font-semibold">Let&rsquo;s Connect : Follow us on social media for mouthwatering updates! </p>
                   </aside> 
                   <nav>
                     <div className="space-x-5 flex text-2xl mt-4">
