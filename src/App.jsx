@@ -9,6 +9,7 @@ import WantCook from './WantCook'
 import CurrentCooking from './CurrentCooking'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/Footer'
 
 
 function App() {
@@ -31,16 +32,16 @@ function App() {
     }
   }
 
-  const handlePreparing=(recipe_id)=>{
-    const newRecipe = wantCookItems.filter(cookItem => cookItem.recipe_id != recipe_id)
-    // console.log(newRecipe)
+  const handlePreparing=(recipe)=>{
+    const newRecipe = wantCookItems.filter(cookItem => cookItem.recipe_id != recipe.recipe_id)
     setWantCookItems(newRecipe)
-    const mostNewRecipe = newRecipe.find(recepe=> recepe.recipe_id == newRecipe.recipe_id)
-    // console.log(typeof mostNewRecipe)
+    console.log(newRecipe)
+    const mostNewRecipe = wantCookItems.filter(recepe=> recepe.recipe_id == recipe.recipe_id)
+    // console.log(mostNewRecipe)
     setCurrentCookin([...currentCookings,mostNewRecipe])
     // console.log()
   }
-  console.log(typeof currentCookings)
+  // console.log(currentCookings)
 
   return (
     <>
@@ -54,13 +55,13 @@ function App() {
        <OurRecipes></OurRecipes>
       </section>
       <section>
-        <div className='md:flex gap-5'>
+        <div className='md:flex gap-5 mb-20'>
         <div className="md:w-3/5 grid md:grid-cols-2 gap-4">
           {
             foodCards.map((foodCard,idx)=> <SingleCard key={idx} foodCard={foodCard} handleWantToCook={handleWantToCook}></SingleCard>)
           }
         </div>
-        <div className='w-2/5 border-[1px] border-[#FB8B24] shadow-lg shadow-[#FB8B24] rounded-xl p-5 h-full'>
+        <div className='md:w-2/5 border-[1px] border-[#FB8B24] shadow-lg shadow-[#FB8B24] rounded-xl p-5 h-full'>
         <WantCook wantCookItems={wantCookItems} handlePreparing={handlePreparing}></WantCook>
         <CurrentCooking currentCookings={currentCookings}></CurrentCooking>
         </div>
@@ -68,6 +69,9 @@ function App() {
 
       </section>
     </main>
+    <footer>
+      <Footer></Footer>
+    </footer>
     
     </>
   )

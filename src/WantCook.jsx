@@ -15,12 +15,14 @@ const WantCook = ({wantCookItems,handlePreparing}) => {
             {
                 wantCookItems.map((wantCookItem,idx)=> <div className='py-4 flex justify-between items-center text-xs font-semibold' key={idx}>
                     <span>{idx+1}.</span>
+                    <tbody>
                     <tr className='flex gap-4 items-center '>
                         <td>{wantCookItem.Recipe_name}</td>
                         <td>{wantCookItem.Preparing_time} <br /> minutes</td>
                         <td>{wantCookItem.Calories} <br /> Calories</td>
                     </tr>
-                    <button onClick={()=>handlePreparing(wantCookItem.recipe_id)} className='bg-[#FDA403] py-1 px-2 rounded-3xl text-xs text-black font-semibold'>Preparing</button>
+                    </tbody>
+                    <button onClick={()=>handlePreparing(wantCookItem)} className='bg-[#FDA403] py-1 px-2 rounded-3xl text-xs text-black font-semibold'>Preparing</button>
                 </div>)
             }
             
